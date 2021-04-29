@@ -7,7 +7,7 @@
 #include "consts.h"
 #include "inout.h"
 
-/*
+/* 
  * Print the current time
  */
 void display_time()
