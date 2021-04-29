@@ -75,7 +75,7 @@ int main()
 }
 
 
-int foo()
+int foo1()
 {
     return 0;
 }
