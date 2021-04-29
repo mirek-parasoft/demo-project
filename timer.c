@@ -111,7 +111,7 @@ void delete_timer_record(int idx)
     int i;
     
     /* fill in the holes */
-    for (i = idx; i < curr_index -1; i++)
+    for (i = idx; i < curr_index - 1; i++)
     {
         if (0 == timer_records[i]) {
             break;
@@ -129,11 +129,11 @@ void format_timer_record(int idx, char* buf)
     char end[BUF_SIZE];
     
     struct timer_record* tr = timer_records[idx];
-
+    if (tr) {
     strftime(start, BUF_SIZE, "%I:%M %p", localtime(&tr->starttime));
     strftime(end, BUF_SIZE, "%I:%M %p", localtime(&tr->endtime));
 
-    if (tr) {
+
         sprintf(buf, "%d\t%s\t%s\t%d\n", idx+1, start, end, tr->channel);
     }
     
