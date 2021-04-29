@@ -111,7 +111,7 @@ void delete_timer_record(int idx)
     int i;
     
     /* fill in the holes */
-    for (i = idx-1; i < curr_index; i++)
+    for (i = idx; i < curr_index; i++)
     {
         if (0 == timer_records[i]) {
             break;
