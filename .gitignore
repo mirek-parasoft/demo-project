@@ -1,0 +1,8 @@
+*.o
+*.exe
+.cpptest/*
+*.xml
+*.html
+*.jpeg
+*.png
+*.bdf
