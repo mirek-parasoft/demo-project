@@ -153,3 +153,6 @@ void list_timers()
     print_string("\n\n");
 }
 
+int foo(int a, int b) {
+    return a+b;
+}
