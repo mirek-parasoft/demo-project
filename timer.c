@@ -152,4 +152,3 @@ void list_timers()
     }
     print_string("\n\n");
 }
-
