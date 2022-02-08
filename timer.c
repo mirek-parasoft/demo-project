@@ -154,5 +154,5 @@ void list_timers()
 }
 
 int foo(int a, int b) {
-    return a+b + *value;
+    return a+b;
 }
