@@ -157,5 +157,5 @@ void print_empty_test_frame()
 {
     char *message =  malloc(10 * sizeof(char));
     message[0] = '\0';
-    print("%s", message);
+    printf("%s", message);
 }
