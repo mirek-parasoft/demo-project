@@ -154,6 +154,5 @@ void list_timers()
 }
 
 int foo(int a, int b) {
-    int * value = malloc(sizeof(int));
     return a+b + *value;
 }
