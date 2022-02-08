@@ -160,5 +160,5 @@ void print_empty_test_frame()
       message[0] = '\0';
       printf("%s", message);
     }
-    delete(message);
+    free(message);
 }
