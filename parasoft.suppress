@@ -14,10 +14,3 @@
 # date: 2020-09-21             (optional)
 # suppression-end
 
-suppression-begin
-file: timer.c
-rule-id: BD-PB-NP
-message: "the_record" may possibly be null
-reason: Acceptable
-author: demo-user
-suppression-end
