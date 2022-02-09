@@ -156,7 +156,10 @@ void list_timers()
 void send_emtpty_test_message(){
 
     char * message = malloc (10);
-    message[0] = '\0';
-    printf("%s", message);
+    if (message) {
+      message[0] = '\0';
+      printf("%s", message);
+    } 
+    free (message);
 
 }
