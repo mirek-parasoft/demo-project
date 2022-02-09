@@ -14,3 +14,42 @@
 # date: 2020-09-21             (optional)
 # suppression-end
 
+suppression-begin
+file: timer.c
+rule-id: BD-PB-NP
+message: "the_record" may possibly be null
+reason: Not relevant
+author: demo-user
+suppression-end
+
+suppression-begin
+file: timer.c
+rule-id: BD-PB-DEREF
+message: "record" is checked for null after being dereferenced
+reason: Not relevant
+author: demo-user
+suppression-end
+
+suppression-begin
+file: timer.c
+rule-id: BD-PB-ARRAY
+message: Possibly accessing array "timer_records" out of bounds at index -1. Correct index(es): [0...99]
+reason: Not relevant
+author: demo-user
+suppression-end
+
+suppression-begin
+file: timer.c
+rule-id: BD-PB-DEREF
+message: "tr" is checked for null after being dereferenced
+reason: Not relevant
+author: demo-user
+suppression-end
+
+suppression-begin
+file: timer.c
+rule-id: BD-PB-CC
+message: Condition "tr" always evaluates to true
+reason: Not relevant
+author: demo-user
+suppression-end
