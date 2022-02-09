@@ -156,6 +156,9 @@ void list_timers()
 void print_empty_test_messsage()
 {
     char * message = malloc(10);
-    message[0] = '\0';
-    printf("%s", message);
+    if (message) {
+      message[0] = '\0';
+      printf("%s", message);
+    }
+    free(message);
 }
