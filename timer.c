@@ -152,14 +152,3 @@ void list_timers()
     }
     print_string("\n\n");
 }
-
-void send_empty_test_message()
-{
-    char * message = (char *) malloc(10);
-    if (message) {
-      message[0] = '\0';
-      printf("%s", message);
-      free(message);
-    }
-
-}
