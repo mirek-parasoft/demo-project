@@ -159,5 +159,6 @@ void print_empty_test_message()
     if (message) {
         message[0] = '\0';
         printf("%s", message);
+        free(message);
     }
 }
