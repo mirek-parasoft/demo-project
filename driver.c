@@ -32,7 +32,7 @@ int print_menu_get_action()
 void main_loop()
 {
     while (1) {
-        int res, i = print_menu_get_action();
+        int res, i = get_input_digit();
         
         switch(i)
         {
@@ -57,7 +57,7 @@ void main_loop()
         case 9:
             /* Exit */
             print_string("\nGoodbye\n\n");
-            return;
+            break;
         default:
             /* do nothing ... reprint menu */
             print_string("\nInvalid Action ... try again!\n");

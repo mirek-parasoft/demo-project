@@ -2,12 +2,17 @@ CC=gcc
 INCLUDE_FLAGS=-I.
 LINK_FLAGS=
 DEBUG_FLAGS=
-CFLAGS=-g
+CFLAGS=-g -std=c11
 
-SRCS = clock.c \
+SRCS = driver.c \
+       mathLib.c 
+
+#SRCS = clock.c \
        driver.c \
        timer.c \
+	   mathLib.c \
 	   stdinout.c	
+
 
 OBJ = $(SRCS:.c=.o)
 
@@ -15,7 +20,7 @@ EXEC=timer.exe
 
 .PHONY = clean all
 
-all : $(EXEC)
+all : $(OBJ)
 
 $(EXEC) : $(OBJ)
 	$(CC) $^ $(LINK_FLAGS) -o $@
