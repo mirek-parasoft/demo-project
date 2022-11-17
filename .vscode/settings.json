@@ -1,5 +1,5 @@
 {
     "cpptest.compilerIdentifier": "gcc_10-64",
     "cpptest.commandLinePattern": "docker run --rm -v ${workspaceFolder}:${workspaceFolder} -w ${workspaceFolder} cpptest-sa cpptestcli ${stopFile} ${compilerConfig} ${testConfig} ${reportDir} ${selectedFiles} -module . -trace make clean all",
-    "cpptest.testConfiguration": "${workspaceFolder}/Local scans.properties"
+    "cpptest.testConfiguration": "${workspaceFolder}/MISRA2012-Light.properties"
 }
