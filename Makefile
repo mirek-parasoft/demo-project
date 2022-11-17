@@ -5,7 +5,7 @@ DEBUG_FLAGS=
 CFLAGS=-g -std=c11
 
 SRCS = driver.c \
-       mathLib.c 
+       sensor.c 
 
 #SRCS = clock.c \
        driver.c \

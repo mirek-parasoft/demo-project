@@ -4,11 +4,14 @@
  */
 
 #include <stdio.h>
+#include <stdint.h>
 #include "clock.h"
 #include "consts.h"
 #include "inout.h"
 #include "timer.h"
+#include "mathLib.h"
 
+uint8_t sensor_channel;
 
 int print_menu_get_action()
 {
@@ -28,16 +31,18 @@ int print_menu_get_action()
     print_string("Enter selection, when done press <enter> > ");
     return (get_input_digit());
 }
-
+/*
 void main_loop()
 {
     while (1) {
         int res, i = get_input_digit();
+        int32_t value;
         
         switch(i)
         {
         case 1:
             res = add_timer();
+            getSensorValue(sensor_channel, &value);
             if (ERROR_CODE == res) {
                 print_string("\nError ... timer not added!\n");
             } else {
@@ -55,16 +60,16 @@ void main_loop()
             display_time();
             break;
         case 9:
-            /* Exit */
-            print_string("\nGoodbye\n\n");
+            print_string("\Exiting\n\n");
             break;
         default:
-            /* do nothing ... reprint menu */
+            // do nothing ... reprint menu 
             print_string("\nInvalid Action ... try again!\n");
             break;
         }
     }
 }
+*/
 
 int main()
 {
