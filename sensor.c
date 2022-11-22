@@ -1,10 +1,7 @@
 #include <math.h>
 #include <stdint.h>
-
 #include "mathLib.h"
 
-
-/*
 int8_t getSensorValue(uint8_t sensorId, int32_t * value) {
     int32_t * sensors;
     int8_t status;
@@ -18,7 +15,7 @@ int8_t getSensorValue(uint8_t sensorId, int32_t * value) {
     }
     return status;
 }
-*/
+
 
 struct Sensors getSensors(void) {
     //Direct read from memory - to be implemented

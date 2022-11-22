@@ -31,7 +31,7 @@ int print_menu_get_action()
     print_string("Enter selection, when done press <enter> > ");
     return (get_input_digit());
 }
-/*
+
 void main_loop()
 {
     while (1) {
@@ -69,7 +69,7 @@ void main_loop()
         }
     }
 }
-*/
+
 
 int main()
 {
