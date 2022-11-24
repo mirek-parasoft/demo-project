@@ -32,7 +32,7 @@ int print_menu_get_action()
     return (get_input_digit());
 }
 
-void main_loop()
+_Noreturn void main_loop()
 {
     while (1) {
         int res, i = get_input_digit();
